@@ -5,16 +5,17 @@ mkdir -p ${out_dir}
 
 while read subj; do
 file_name=$out_dir/input_file_${subj}.txt
-FA_image=${data_dir}${subj}/MNI_2_FA/FA_image.nii
-out_dir_param=${data_dir}${subj}/Vol_param
+FA_image=${data_dir}${subj}/Images/${subj}_DWI_ec_bin_mask.nii
+out_dir_param=${data_dir}${subj}/Vol_param/
 trk_file=${data_dir}${subj}/Tracks/${subj}_qball_pds_pico_trk.trk
 trk_2_cell_dir=${data_dir}${subj}/Trk_2_Cell/
-segmented_tracks=${data_dir}${subj}/06_segmented_tracks/
+segmented_tracks=${data_dir}${subj}/06_segmented_tracts/
 sep_Noisy_tracks=${data_dir}${subj}/SeparateNoisyTracks/
 
 
 echo ${data_dir} > $file_name
 echo ${subj} >> $file_name
+echo ${FA_image} >> $file_name
 echo ${out_dir_param} >> ${file_name}
 echo ${trk_file} >> ${file_name}
 echo ${trk_2_cell_dir} >> ${file_name}

@@ -28,7 +28,7 @@ stepSizeforStreamLines=1; % density of streamlines; increase the number for fast
 stepSizeStreamLinesPlot=1;
 stepSizeforTracks=1;
 stepSizeforTracksPlot=10;
-eps=1e-4; %% Accuracy of the computation lower it for increased accuracy = lowered from 1e-1 for more accuracy
+eps=1e-5; %% Accuracy of the computation lower it for increased accuracy = lowered from 1e-1 for more accuracy
 
 %% Parameters for tracks
 track_sample_size = 1;

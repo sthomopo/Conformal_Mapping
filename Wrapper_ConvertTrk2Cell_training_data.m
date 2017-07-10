@@ -6,15 +6,11 @@ input_file_other_subjs;
 
 % trk_list is defined in the input_file_other_subjs;
 
-output_dir_tracks_seg=strcat(output_dir_tracks, '/Segmented_tracks/');
-%output_dir_tracks=strcat(data_dir, 'Trk_2_Cell/Segmented_tracks/');
+output_dir_tracks_seg=strcat(output_dir_tracks, 'Segmented_tracks/');
 
 if (exist(output_dir_tracks_seg) == 0)
     mkdir(output_dir_tracks_seg)
 end
-%if (exist(output_dir_tracks) == 0)
-%    mkdir(output_dir_tracks)
-%end
 
 for i = 1: length(trk_list)
 
