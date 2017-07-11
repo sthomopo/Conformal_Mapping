@@ -1,0 +1,96 @@
+----------------------------------------
+Begin PBS Prologue Mon Jul 10 17:47:53 PDT 2017
+Job ID:            23683685.hpc-pbs1.hpcc.usc.edu
+Username:          vikashg
+Accountname:       default
+Group:             med-ar
+Project:           default
+Name:              MapTracks
+Queue:             main
+Shared Access:     no
+All Cores:         no
+Has MIC:           no
+Is hsda:           false
+Nodes:             hpc1737 
+TMPDIR:            /tmp/23683685.hpc-pbs1.hpcc.usc.edu
+End PBS Prologue Mon Jul 10 17:47:54 PDT 2017
+----------------------------------------
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.538062) 64-bit (glnxa64)
+                             February 23, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+input_file =
+
+    '/home/rcf-proj2/vg/Data/AD_DOD/Input_files/input_file_0185442.txt'
+
+
+subj =
+
+    '0185442'
+
+
+lib_path =
+
+    '/home/rcf-proj2/vg/Softwares/matlab_libs/'
+
+
+tline =
+
+    '/home/rcf-proj2/vg/Data/AD_DOD/'
+
+
+trk_list =
+
+  117 cell array
+
+  Columns 1 through 5
+
+    'atr_l'    'atr_r'    'cc_frontal'    'cc_occipital'    'cc_parietal'
+
+  Columns 6 through 11
+
+    'cc_temporal'    'cgc_l'    'cgc_r'    'cst_l'    'cst_r'    'ifo_l'
+
+  Columns 12 through 17
+
+    'ifo_r'    'ilf_l'    'ilf_r'    'slf_l'    'unc_l'    'unc_r'
+
+
+d =
+
+    '37'
+
+Loaded streamlines
+{Error using load
+Unable to read file
+'/home/rcf-proj2/vg/Data/AD_DOD/0185442/Trk_2_Cell/All_fibers/Tracks_37.mat'.
+No such file or directory.
+
+Error in MapTracks_indv_subjs (line 32)
+load(trk_cell_file);
+} 
+>> ----------------------------------------
+Begin PBS Epilogue Mon Jul 10 17:48:31 PDT 2017
+Job ID:           23683685.hpc-pbs1.hpcc.usc.edu
+Username:         vikashg
+Accountname:      default
+Group:            med-ar
+Job Name:         MapTracks
+Session:          11423
+Limits:           neednodes=1,nodes=1,walltime=12:00:00
+Resources:        cput=00:00:33,energy_used=0,mem=2061644kb,vmem=3517988kb,walltime=00:00:37
+Queue:            main
+Shared Access:    no
+Has MIC:          no
+Is hsda:          false
+removed '/scratch'
+End PBS Epilogue Mon Jul 10 17:48:32 PDT 2017
+----------------------------------------
